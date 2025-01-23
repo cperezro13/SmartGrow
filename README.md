@@ -15,9 +15,9 @@
 
   			7.El cliente quiere que la aplicación cuente con un toolbar para mostrar las opciones		
 
-#3  			8.El cliente quiere que la aplicación cuente con un BottomNavigationView para facilitar la navegación	
+#3  			8.El cliente quiere poder identificar las plantas	
 
-  			9.El cliente quiere que los clientes puedan hacer sus pedidos por la aplicación para brindar un mejor servicio	
+  			9.El cliente quiere poder recibir notificaciones sobre ciclos de riego
 
  			10.El cliente quiere que la aplicación guarde las personalizaciones del usuario para ofrecer un mejor servicio	
 
