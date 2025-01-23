@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:padding="15dp"
+android:layout_height="match_parent"
+tools:context=".Register">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Nombres"
+
+    android:id="@+id/txt_nombreRegister"
+    android:ems="10"
+    android:inputType="textPersonName"
+    android:paddingTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"
+
+        android:id="@+id/txt_appRegister"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+
+        android:id="@+id/txt_correoRegister"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+
+        android:id="@+id/txt_passwordRegister"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingTop="15dp"/>
+
+
+
+</LinearLayout>

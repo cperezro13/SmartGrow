@@ -9,7 +9,10 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +31,76 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText nomP, appP,correoP,passwordP;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.register);
+
+        nomP = findViewById(R.id.txt_nombreRegister);
+                appP = findViewById(R.id.txt_appRegister);
+                correoP = findViewById(R.id.txt_correoRegister);
+                passwordP = findViewById(R.id.txt_passwordRegister);
+    }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.register);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_register,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        String nombre = nomP.getText().toString();
+        switch (item.getItemId()){
+            case R.id.icon_add:{
+                if (nombre.equals("")){
+                    validacion();
+                    break;
+                }
+                else {
+                    Toast.makeText(this, "Agregado", Toast.LENGTH_LONG).show();
+                    limpiarCajas();
+                    break;
+                }
+            }
+            default:break;
+        }
+        return true;
+    }
+
+    private void limpiarCajas() {
+        nomP.setText("");
+        appP.setText("");
+        correoP.setText("");
+        passwordP.setText("");
+
+    }
+
+    private void validacion() {
+        String nombre = nomP.getText().toString();
+
+        if (nombre.equals("")) {
+            nomP.setError("Required");
+        }
+        else if (appP.equals("")){
+            appP.setError("Required");
+        }
+        else if (correoP.equals("")){
+            appP.setError("Required");
+        }
+        else if (passwordP.equals("")){
+            appP.setError("Required");
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
