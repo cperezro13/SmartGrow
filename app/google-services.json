@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "49164837232",
+    "firebase_url": "https://smartgrow-b53f4-default-rtdb.firebaseio.com",
+    "project_id": "smartgrow-b53f4",
+    "storage_bucket": "smartgrow-b53f4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49164837232:android:aaf1db412e9758172c2fb5",
+        "android_client_info": {
+          "package_name": "com.ejemplo.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49164837232:android:087852a1fa0e5d662c2fb5",
+        "android_client_info": {
+          "package_name": "com.ejemplo.smartgrow7"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49164837232:android:bb6d7e4166aee0842c2fb5",
+        "android_client_info": {
+          "package_name": "com.example.smartgrow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
