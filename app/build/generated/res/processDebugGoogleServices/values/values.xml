@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://smartgrow-b53f4-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">49164837232</string>
+    <string name="google_api_key" translatable="false">AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0</string>
+    <string name="google_app_id" translatable="false">1:49164837232:android:aaf1db412e9758172c2fb5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0</string>
+    <string name="google_storage_bucket" translatable="false">smartgrow-b53f4.firebasestorage.app</string>
+    <string name="project_id" translatable="false">smartgrow-b53f4</string>
+</resources>

@@ -1,6 +1,7 @@
 package com.ejemplo.myapplication;
 
 public class PlantModel {
+    private String id; // Nuevo atributo para el ID
     private String name;
     private String description;
 
@@ -15,6 +16,14 @@ public class PlantModel {
     }
 
     // Getters y setters
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
