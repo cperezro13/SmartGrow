@@ -59,7 +59,7 @@
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="178dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#4CAF50"
+                android:backgroundTint="#435D37"
                 android:text="acceder"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
