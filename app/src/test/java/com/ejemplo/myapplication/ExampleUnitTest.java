@@ -1,4 +1,4 @@
-package com.example.smartgrow;
+package com.ejemplo.myapplication;
 
 import org.junit.Test;
 
