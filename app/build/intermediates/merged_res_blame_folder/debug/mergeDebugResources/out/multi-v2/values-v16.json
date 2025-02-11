@@ -4,7 +4,7 @@
             "outputFile": "com.ejemplo.myapplication.app-mergeDebugResources-37:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-4\\5b9097cf1d8cfa4b13033f3e8b91c97f\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\5b9097cf1d8cfa4b13033f3e8b91c97f\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

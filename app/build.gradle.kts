@@ -49,4 +49,14 @@ dependencies {
 
     // Firebase Realtime Database
     implementation("com.google.firebase:firebase-database")
+
+    // Retrofit para hacer peticiones HTTP
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+    // Convertidor de JSON para Retrofit (usa GSON)
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Librería para manejar imágenes en Base64 (opcional, útil si envías imágenes a una API)
+    implementation("androidx.core:core-ktx:1.12.0")
+
 }
