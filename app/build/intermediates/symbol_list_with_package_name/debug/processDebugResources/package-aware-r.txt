@@ -3328,6 +3328,7 @@ id horizontal_only
 id icon
 id icon_group
 id icon_only
+id identifyPlantButton
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3482,6 +3483,7 @@ id ratio
 id rectangles
 id recyclerView
 id report_drawn
+id resultText
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3510,6 +3512,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectImageButton
 id select_dialog_listview
 id selected
 id selection_type

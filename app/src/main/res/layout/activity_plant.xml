@@ -5,28 +5,69 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Campo de nombre de la planta -->
     <EditText
         android:id="@+id/plantNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nombre de la planta" />
 
+    <!-- Campo de descripción de la planta -->
     <EditText
         android:id="@+id/plantDescriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descripción de la planta" />
 
+    <!-- Imagen seleccionada -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Botón para seleccionar imagen -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1F4522"
+        android:text="Seleccionar Imagen" />
+
+    <!-- Botón para identificar la planta -->
+    <Button
+        android:id="@+id/identifyPlantButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#729D44"
+        android:text="Identificar Planta" />
+
+    <!-- Resultado del reconocimiento -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado aquí"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="8dp"/>
+
+    <!-- Botón para guardar planta manualmente -->
     <Button
         android:id="@+id/savePlantButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1B401C"
+        android:backgroundTint="#23B129"
         android:text="Guardar Planta" />
 
+    <!-- Lista de plantas guardadas -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1" />
 </LinearLayout>
+

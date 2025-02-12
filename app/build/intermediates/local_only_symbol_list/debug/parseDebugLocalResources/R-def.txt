@@ -10,6 +10,7 @@ id editPlantButton
 id editPlantDescription
 id editPlantName
 id emailEditText
+id identifyPlantButton
 id imageView
 id linearLayout
 id logInButton
@@ -20,7 +21,9 @@ id plantDescriptionTextView
 id plantNameEditText
 id plantNameTextView
 id recyclerView
+id resultText
 id savePlantButton
+id selectImageButton
 id signUpButton
 layout activity_main
 layout activity_plant
