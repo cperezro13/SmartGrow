@@ -41,11 +41,23 @@
 	
 				5.2 Realizar que la aplicacion pueda leer la base de datos y mostrar las plantas añadidas
 
-  			7.El cliente quiere que la aplicación cuente con un toolbar para mostrar las opciones		
+  			7.El cliente quiere tener una interfaz grafica mas avanzada mas legible e intuitiva
+	
+				7.1 Quiere hacer uso de paneles y de botones con colores llamativos
+	
+				7.2 El cliente quiere tener una carpeta de recursos variados entre lo que se encuentran imagenes fuentes y formas
 
-#3  			8.El cliente quiere poder identificar las plantas	
-
-  			9.El cliente quiere poder recibir notificaciones sobre ciclos de riego
+#3  			8.El cliente quiere poder identificar las plantas a traves de la aplicacion	
+	
+				8.1 Quiere implementar una API ya creada para identificarla 
+	
+				8.2 Realizar una base de datos sencilla para entrenar un modelo de reconocimiento
+	
+  			9.El cliente quiere incluir un apartado donde le indican el nombre cientifico de la planta identificada
+	
+				9.1 Incorporarar una base de datos con el nombre cientifico
+	
+				9.2 Hacer uso de una api externa para poder visualizar diferentes caracteristicas 				
 
  			10.El cliente quiere que la aplicación guarde las personalizaciones del usuario para ofrecer un mejor servicio	
 
