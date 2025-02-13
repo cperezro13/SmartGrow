@@ -129,3 +129,4 @@ Momentos
 
 # Casos de usos detallados
 
+![image](https://github.com/user-attachments/assets/7292ff9b-f735-42be-8505-2368b89725c4)
