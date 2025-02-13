@@ -21,8 +21,17 @@
         android:id="@+id/savePlantButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="#1B401C"
         android:text="Guardar Planta" />
+
+    <Button
+        android:id="@+id/recognizePlantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reconocer Planta"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

@@ -1,0 +1,6 @@
+com.ejemplo.myapplication.test.app-annotation-experimental-1.4.0-0 C:\Users\admin\.gradle\caches\transforms-4\96ad5a250a5cdafbfc15a7306ee5c582\transformed\annotation-experimental-1.4.0\res
+com.ejemplo.myapplication.test.app-core-1.5.0-1 C:\Users\admin\.gradle\caches\transforms-4\be7efc63627048fddf58681e49c0fc22\transformed\core-1.5.0\res
+com.ejemplo.myapplication.test.app-androidTest-2 C:\Users\admin\StudioProjects\SmartGrow\app\build\generated\res\resValues\androidTest\debug
+com.ejemplo.myapplication.test.app-mergeDebugAndroidTestResources-3 C:\Users\admin\StudioProjects\SmartGrow\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.ejemplo.myapplication.test.app-mergeDebugAndroidTestResources-4 C:\Users\admin\StudioProjects\SmartGrow\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.ejemplo.myapplication.test.app-debugAndroidTest-5 C:\Users\admin\StudioProjects\SmartGrow\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

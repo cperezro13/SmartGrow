@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\admin\.gradle\caches\transforms-4\0354554d1b5ad0f32433bbfc28c9d029\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -52,6 +52,7 @@ MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\admin\.
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\admin\.gradle\caches\transforms-4\7aa5fb7e072cbe9f1a6567aed16ccdf1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\admin\.gradle\caches\transforms-4\c9c93c4b23f039e43e144bd31091a861\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\admin\.gradle\caches\transforms-4\9df3c174ce3a2f32edbb65e0a29b7cf8\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\3afd32f21af6bbf9d0304cb4b94d8a41\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-4\c7a628c7373af454a02be313a626c89c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\admin\.gradle\caches\transforms-4\b218e3973a5fb529f34d26c7fa625640\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\ef459029b63c719b5e88e17ad4c30818\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
@@ -66,6 +67,7 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\admin\.gradle\caches\transform
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\admin\.gradle\caches\transforms-4\a4994a32bf992df9a6635fddf2289d08\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\admin\.gradle\caches\transforms-4\96ad5a250a5cdafbfc15a7306ee5c582\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\admin\.gradle\caches\transforms-4\79ea9ad96c2b2f276ec97eec4ff2760f\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:2:1-12:12
 	package
 		INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -76,9 +78,19 @@ MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\U
 		INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:5:5-64
+	android:name
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:5:22-62
+uses-feature#android.hardware.camera
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:6:5-83
+	android:required
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:6:58-81
+	android:name
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:6:19-57
 application
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:5:5-29:19
-INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:9:5-43:19
+INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:9:5-43:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -115,56 +127,76 @@ MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\admin\.
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\admin\.gradle\caches\transforms-4\53b44a83224f5c2354d3e0586dac9d32\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\admin\.gradle\caches\transforms-4\7aa5fb7e072cbe9f1a6567aed16ccdf1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\admin\.gradle\caches\transforms-4\7aa5fb7e072cbe9f1a6567aed16ccdf1\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\3afd32f21af6bbf9d0304cb4b94d8a41\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\3afd32f21af6bbf9d0304cb4b94d8a41\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\ef459029b63c719b5e88e17ad4c30818\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\admin\.gradle\caches\transforms-4\ef459029b63c719b5e88e17ad4c30818\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\admin\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\admin\.gradle\caches\transforms-4\65bf35954ccd8396330082f4d3e76538\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\admin\.gradle\caches\transforms-4\65bf35954ccd8396330082f4d3e76538\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:10:5-20
 	android:extractNativeLibs
 		INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\admin\.gradle\caches\transforms-4\476cb3ba62f82671c27541e7a8286651\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:13:9-51
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:17:9-51
 	android:dataExtractionRules
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.ejemplo.myapplication.PlantActivity
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:16:9-18:40
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:18:13-37
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:17:13-42
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:21:13-42
 activity#com.ejemplo.myapplication.MainActivity
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:20:9-27:20
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:24:9-31:20
 	android:exported
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:23:13-26:29
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:29:27-74
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:32:9-40:20
+	android:grantUriPermissions
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:35:13-47
+	android:authorities
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:34:13-73
+	android:exported
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:33:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:37:13-39:57
+	android:resource
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:39:17-55
+	android:name
+		ADDED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml:38:17-67
 uses-sdk
 INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
@@ -265,6 +297,8 @@ MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\admin\.gradle\caches\tra
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\admin\.gradle\caches\transforms-4\c9c93c4b23f039e43e144bd31091a861\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\admin\.gradle\caches\transforms-4\9df3c174ce3a2f32edbb65e0a29b7cf8\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\admin\.gradle\caches\transforms-4\9df3c174ce3a2f32edbb65e0a29b7cf8\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\3afd32f21af6bbf9d0304cb4b94d8a41\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\3afd32f21af6bbf9d0304cb4b94d8a41\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:7:5-8:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-4\c7a628c7373af454a02be313a626c89c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-4\c7a628c7373af454a02be313a626c89c\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\admin\.gradle\caches\transforms-4\b218e3973a5fb529f34d26c7fa625640\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -293,12 +327,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\admin\.
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\admin\.gradle\caches\transforms-4\96ad5a250a5cdafbfc15a7306ee5c582\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\admin\.gradle\caches\transforms-4\79ea9ad96c2b2f276ec97eec4ff2760f\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\admin\.gradle\caches\transforms-4\79ea9ad96c2b2f276ec97eec4ff2760f\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\admin\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:7:5-8:41
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\admin\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
 		INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\admin\StudioProjects\SmartGrow\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\admin\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\admin\.gradle\caches\transforms-4\5920761b86a7060d123eef34b9207eda\transformed\firebase-database-21.0.0\AndroidManifest.xml:23:5-67
