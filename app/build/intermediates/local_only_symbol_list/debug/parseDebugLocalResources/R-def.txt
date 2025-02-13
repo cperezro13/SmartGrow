@@ -2,16 +2,20 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable bg
+drawable fondo_textview
+drawable fondo_textview2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable rectangulo
+font aileron_light
 id deletePlantButton
 id editPlantButton
 id editPlantDescription
 id editPlantName
 id emailEditText
 id imageView
-id linearLayout
 id logInButton
 id main
 id passwordEditText
@@ -19,9 +23,16 @@ id plantDescriptionEditText
 id plantDescriptionTextView
 id plantNameEditText
 id plantNameTextView
+id recognizePlantButton
+id rectangulo
 id recyclerView
 id savePlantButton
 id signUpButton
+id textView
+id textView2
+id textView6
+id textViewPasswordHint
+id textView_naturaleza
 layout activity_main
 layout activity_plant
 layout dialog_edit_plant
@@ -40,3 +51,4 @@ style Base.Theme.MyApplication
 style Theme.MyApplication
 xml backup_rules
 xml data_extraction_rules
+xml provider_paths

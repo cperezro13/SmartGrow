@@ -1,78 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="16dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <EditText
-            android:id="@+id/emailEditText"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="email"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/passwordEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="contraseña"
-            android:inputType="textPassword"
-            android:minHeight="48dp" />
+            <!-- Imagen Rectángulo -->
+            <ImageView
+                android:id="@+id/rectangulo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangulo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="50dp" />
 
-        <LinearLayout
-            style="?android:attr/buttonBarStyle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            <!-- Logo dentro del rectángulo -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo"
+                app:layout_constraintTop_toTopOf="@id/rectangulo"
+                app:layout_constraintBottom_toBottomOf="@id/rectangulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-            <Button
-                android:id="@+id/signUpButton"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="222dp"
+            <!-- Texto SMARTGROW dentro del rectángulo -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="#4CAF50"
-                android:text="registrarse"
-                android:textColor="#F3E5F5" />
+                android:text="SMARTGROW"
+                android:textSize="19sp"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="-35dp" />
 
+            <!-- Texto "Naturaleza conectada" debajo del rectángulo -->
+            <TextView
+                android:id="@+id/textView_naturaleza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naturaleza conectada"
+                android:textColor="@color/black"
+                android:background="@drawable/fondo_textview"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                app:layout_constraintTop_toBottomOf="@id/rectangulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp" />
+
+            <!-- Texto: "Regístrate o accede para continuar" -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regístrate o accede para continuar"
+                android:textSize="18sp"
+                android:fontFamily="@font/aileron_light"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/fondo_textview2"
+                app:layout_constraintTop_toBottomOf="@id/textView_naturaleza"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="85dp" />
+
+            <!-- Texto: "Ingrese un correo electrónico" -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="165dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ingrese un correo electrónico"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@id/emailEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Campo de correo electrónico -->
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:background="@drawable/fondo_textview"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="60dp" />
+
+            <!-- Texto: "Ingrese una contraseña de al menos 6 caracteres" -->
+            <TextView
+                android:id="@+id/textViewPasswordHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ingrese una contraseña de al menos 6 caracteres"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintBottom_toTopOf="@id/passwordEditText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!-- Campo de contraseña -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:background="@drawable/fondo_textview"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/emailEditText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="30dp" />
+
+            <!-- Botón Acceder -->
             <Button
                 android:id="@+id/logInButton"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="178dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#435D37"
-                android:text="acceder"
-                android:textColor="#FFFFFF" />
-        </LinearLayout>
-    </LinearLayout>
+                android:text="Acceder"
+                android:backgroundTint="#272727"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/passwordEditText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+            <!-- Botón Registrarse -->
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Registrarse"
+                android:backgroundTint="#272727"
+                android:textColor="#F3E5F5"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/logInButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

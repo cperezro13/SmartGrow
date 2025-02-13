@@ -41,6 +41,7 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+
     // Importa Firebase BoM (Bill of Materials) para manejar versiones automáticamente
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
 
@@ -49,4 +50,8 @@ dependencies {
 
     // Firebase Realtime Database
     implementation("com.google.firebase:firebase-database")
+
+    implementation("org.tensorflow:tensorflow-lite:2.9.0")
+
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 }
