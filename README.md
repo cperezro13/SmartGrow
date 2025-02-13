@@ -125,3 +125,7 @@ Momentos
 
 # Diagrama de Clases y de casos de uso  
 ![0](https://github.com/user-attachments/assets/a8301384-21c0-4be4-baf0-2b3bdda6f4c6)
+![image](https://github.com/user-attachments/assets/f87c9666-dee1-44e8-b7e3-ff6339e6d21a)
+
+# Casos de usos detallados
+
