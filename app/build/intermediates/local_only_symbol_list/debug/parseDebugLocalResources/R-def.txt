@@ -9,6 +9,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
 drawable rectangulo
+drawable rounded_background
+drawable rounded_item_plant
 font aileron_light
 id deletePlantButton
 id editPlantButton

@@ -1,47 +1,81 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <TextView
-        android:id="@+id/plantNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre de la Planta"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/plantDescriptionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descripción de la Planta"
-        android:textSize="14sp" />
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end">
+        android:padding="16dp"
+        android:background="@drawable/rounded_item_plant"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/editPlantButton"
-            android:layout_width="wrap_content"
+        <!-- Fila superior con textos a la izquierda e imagen a la derecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar"
-            android:textSize="14sp"
-            android:backgroundTint="#4CAF50"
-            android:textColor="#FFFFFF" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <Button
-            android:id="@+id/deletePlantButton"
-            android:layout_width="wrap_content"
+            <!-- Columna izquierda: nombre y descripción -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/plantNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de la Planta"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_background"/>
+
+                <TextView
+                    android:id="@+id/plantDescriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción de la Planta"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/rounded_background"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Fila inferior: botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar"
-            android:textSize="14sp"
-            android:backgroundTint="#327334"
-            android:textColor="#FFFFFF"
-            android:layout_marginStart="8dp" />
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/editPlantButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:text="Editar"
+                android:textColor="#F2F2E6"
+                android:layout_marginEnd="8dp" /> <!-- Añadido margen a la derecha -->
+
+            <Button
+                android:id="@+id/deletePlantButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eliminar"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#064207"/>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.cardview.widget.CardView>
