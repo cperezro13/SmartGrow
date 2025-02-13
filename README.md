@@ -23,19 +23,19 @@
 				3.2	Diseña el eslogan de la tienda	
 
   						
-			4.El cliente quiere que la aplicación cuente con un Register y un login para identificar a sus clientes	
+			4.El cliente quiere contar con una interfaz grafica en todas sus vistas que sea legible y facil de manejar
 	
 				4.1 Desarollar y probar el funcionamiento del registro
 	
 				4.2 implementar un login que autorize el ingreso en base a un registro previo
 	
-#2 			5.El cliente quiere implementar una base de datos que guarde plantas
+#2 			5.El cliente quiere implementar el reconocimiento de imagen 
 	
 				5.1 Crear una realtime database en Firebase y un modulo de autentificacion
 	
 				5.2 Implementar la autentificacion por correo y una forma de administrar las claves por tokens
 	
-  			6.El cliente quiere implementar una forma de realizar un registro de la planta dentro de la aplicacion	
+  			6.El cliente quiere implementar una forma de visualizar sus plantas disponibles
 	
 				5.1 Vincular el UID de cada usuario con su propio jardin
 	
