@@ -1,73 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Campo de nombre de la planta -->
-    <EditText
-        android:id="@+id/plantNameEditText"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre de la planta" />
+        android:layout_marginBottom="32dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
 
-    <!-- Campo de descripción de la planta -->
-    <EditText
-        android:id="@+id/plantDescriptionEditText"
+        <ImageView
+            android:id="@+id/backgroundImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/green"            android:adjustViewBounds="true"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="-50dp"
+            android:layout_marginStart="-1000dp"
+            android:layout_marginEnd="-50dp"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis Plantas"
+            android:fontFamily="@font/aileron_light"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background_name"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/addPlantButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Descripción de la planta" />
-
-    <!-- Imagen seleccionada -->
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
         android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        android:background="@android:color/darker_gray"/>
-
-    <!-- Botón para seleccionar imagen -->
-    <Button
-        android:id="@+id/selectImageButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1F4522"
-        android:text="Seleccionar Imagen" />
-
-    <!-- Botón para identificar la planta -->
-    <Button
-        android:id="@+id/identifyPlantButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#729D44"
-        android:text="Identificar Planta" />
-
-    <!-- Resultado del reconocimiento -->
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Resultado aquí"
-        android:textSize="16sp"
+        android:backgroundTint="#272727"
+        android:text="AGREGAR UNA PLANTA"
+        android:fontFamily="@font/aileron_light"
         android:textStyle="bold"
-        android:gravity="center"
-        android:padding="8dp"/>
-
-    <!-- Botón para guardar planta manualmente -->
-    <Button
-        android:id="@+id/savePlantButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#23B129"
-        android:text="Guardar Planta" />
-
-    <!-- Lista de plantas guardadas -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"/>
 </LinearLayout>
-

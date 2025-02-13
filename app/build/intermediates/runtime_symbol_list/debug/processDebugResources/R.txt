@@ -294,6 +294,10 @@ int attr circularflow_defaultAngle 0x7f0300d6
 int attr circularflow_defaultRadius 0x7f0300d7
 int attr circularflow_radiusInDP 0x7f0300d8
 int attr circularflow_viewCenter 0x7f0300d9
+int attr civ_border_color 0x7f0304de
+int attr civ_border_overlay 0x7f0304df
+int attr civ_border_width 0x7f0304e0
+int attr civ_circle_background_color 0x7f0304e1
 int attr clearsTag 0x7f0300da
 int attr clickAction 0x7f0300db
 int attr clockFaceBackgroundColor 0x7f0300dc
@@ -2963,6 +2967,7 @@ int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
 int drawable avd_hide_password 0x7f070078
 int drawable avd_show_password 0x7f070079
+int drawable bg 0x7f070100
 int drawable btn_checkbox_checked_mtrl 0x7f07007a
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f07007b
 int drawable btn_checkbox_unchecked_mtrl 0x7f07007c
@@ -2995,8 +3000,11 @@ int drawable design_ic_visibility 0x7f070096
 int drawable design_ic_visibility_off 0x7f070097
 int drawable design_password_eye 0x7f070098
 int drawable design_snackbar_background 0x7f070099
+int drawable fondo_textview 0x7f070101
+int drawable fondo_textview2 0x7f070102
 int drawable googleg_disabled_color_18 0x7f07009a
 int drawable googleg_standard_color_18 0x7f07009b
+int drawable ic_add 0x7f070107
 int drawable ic_arrow_back_black_24 0x7f07009c
 int drawable ic_call_answer 0x7f07009d
 int drawable ic_call_answer_low 0x7f07009e
@@ -3094,9 +3102,14 @@ int drawable notification_template_icon_bg 0x7f0700f9
 int drawable notification_template_icon_low_bg 0x7f0700fa
 int drawable notification_tile_bg 0x7f0700fb
 int drawable notify_panel_notification_icon_bg 0x7f0700fc
+int drawable rectangulo 0x7f070103
+int drawable rounded_background_description 0x7f070104
+int drawable rounded_background_name 0x7f070105
+int drawable rounded_item_plant 0x7f070106
 int drawable test_level_drawable 0x7f0700fd
 int drawable tooltip_frame_dark 0x7f0700fe
 int drawable tooltip_frame_light 0x7f0700ff
+int font aileron_light 0x7f140000
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -3168,6 +3181,7 @@ int id action_text 0x7f080043
 int id actions 0x7f080044
 int id activity_chooser_view_content 0x7f080045
 int id add 0x7f080046
+int id addPlantButton 0x7f080217
 int id adjust_height 0x7f080047
 int id adjust_width 0x7f080048
 int id alertTitle 0x7f080049
@@ -3325,9 +3339,9 @@ int id homeAsUp 0x7f0800e0
 int id honorRequest 0x7f0800e1
 int id horizontal_only 0x7f0800e2
 int id icon 0x7f0800e3
+int id iconAdd 0x7f080218
 int id icon_group 0x7f0800e4
 int id icon_only 0x7f0800e5
-int id identifyPlantButton 0x7f0800e6
 int id ifRoom 0x7f0800e7
 int id ignore 0x7f0800e8
 int id ignoreRequest 0x7f0800e9
@@ -3352,7 +3366,6 @@ int id light 0x7f0800fb
 int id line1 0x7f0800fc
 int id line3 0x7f0800fd
 int id linear 0x7f0800fe
-int id linearLayout 0x7f0800ff
 int id listMode 0x7f080100
 int id list_item 0x7f080101
 int id logInButton 0x7f080102
@@ -3468,10 +3481,9 @@ int id pathRelative 0x7f08016f
 int id peekHeight 0x7f080170
 int id percent 0x7f080171
 int id pin 0x7f080172
-int id plantDescriptionEditText 0x7f080173
 int id plantDescriptionTextView 0x7f080174
-int id plantNameEditText 0x7f080175
 int id plantNameTextView 0x7f080176
+int id plantsRecyclerView 0x7f080216
 int id position 0x7f080177
 int id postLayout 0x7f080178
 int id pressed 0x7f080179
@@ -3480,9 +3492,8 @@ int id progress_horizontal 0x7f08017b
 int id radio 0x7f08017c
 int id ratio 0x7f08017d
 int id rectangles 0x7f08017e
-int id recyclerView 0x7f08017f
+int id rectangulo 0x7f080210
 int id report_drawn 0x7f080180
-int id resultText 0x7f080181
 int id reverseSawtooth 0x7f080182
 int id right 0x7f080183
 int id rightToLeft 0x7f080184
@@ -3490,7 +3501,6 @@ int id right_icon 0x7f080185
 int id right_side 0x7f080186
 int id rounded 0x7f080187
 int id row_index_key 0x7f080188
-int id savePlantButton 0x7f080189
 int id save_non_transition_alpha 0x7f08018a
 int id save_overlay_view 0x7f08018b
 int id sawtooth 0x7f08018c
@@ -3511,7 +3521,6 @@ int id search_mag_icon 0x7f08019a
 int id search_plate 0x7f08019b
 int id search_src_text 0x7f08019c
 int id search_voice_btn 0x7f08019d
-int id selectImageButton 0x7f08019e
 int id select_dialog_listview 0x7f08019f
 int id selected 0x7f0801a0
 int id selection_type 0x7f0801a1
@@ -3575,6 +3584,11 @@ int id textSpacerNoButtons 0x7f0801da
 int id textSpacerNoTitle 0x7f0801db
 int id textStart 0x7f0801dc
 int id textTop 0x7f0801dd
+int id textView 0x7f080211
+int id textView2 0x7f080212
+int id textView6 0x7f080213
+int id textViewPasswordHint 0x7f080214
+int id textView_naturaleza 0x7f080215
 int id text_input_end_icon 0x7f0801de
 int id text_input_error_icon 0x7f0801df
 int id text_input_start_icon 0x7f0801e0
@@ -3587,6 +3601,7 @@ int id textinput_suffix_text 0x7f0801e6
 int id time 0x7f0801e7
 int id title 0x7f0801e8
 int id titleDividerNoCustom 0x7f0801e9
+int id titleTextView 0x7f080219
 int id title_template 0x7f0801ea
 int id toggle 0x7f0801eb
 int id top 0x7f0801ec
@@ -3741,6 +3756,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
 int layout activity_plant 0x7f0b001d
+int layout activity_plant_list 0x7f0b0071
 int layout browser_actions_context_menu_page 0x7f0b001e
 int layout browser_actions_context_menu_row 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
@@ -5575,6 +5591,11 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircleImageView { 0x7f0304de, 0x7f0304df, 0x7f0304e0, 0x7f0304e1 }
+int styleable CircleImageView_civ_border_color 0
+int styleable CircleImageView_civ_border_overlay 1
+int styleable CircleImageView_civ_border_width 2
+int styleable CircleImageView_civ_circle_background_color 3
 int[] styleable CircularProgressIndicator { 0x7f03023c, 0x7f03023e, 0x7f03023f }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1

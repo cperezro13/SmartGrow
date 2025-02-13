@@ -17,18 +17,29 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
+
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true // Debe ser true para producción
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "PLANT_ID_API_KEY", "\"${project.properties["PLANT_ID_API_KEY"]}\"")
+        }
+
+        debug {
+            isDebuggable = true
+            buildConfigField("String", "PLANT_ID_API_KEY", "\"${project.properties["PLANT_ID_API_KEY"]}\"")
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17 // Actualizado a Java 17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -41,22 +52,21 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    // Importa Firebase BoM (Bill of Materials) para manejar versiones automáticamente
+    // Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
-
-    // Firebase Authentication
     implementation("com.google.firebase:firebase-auth")
-
-    // Firebase Realtime Database
     implementation("com.google.firebase:firebase-database")
 
-    // Retrofit para hacer peticiones HTTP
+    // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
-
-    // Convertidor de JSON para Retrofit (usa GSON)
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
-    // Librería para manejar imágenes en Base64 (opcional, útil si envías imágenes a una API)
+    // Gson
+    implementation("com.google.code.gson:gson:2.8.9")
+
+    // Core KTX
     implementation("androidx.core:core-ktx:1.12.0")
+
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 
 }

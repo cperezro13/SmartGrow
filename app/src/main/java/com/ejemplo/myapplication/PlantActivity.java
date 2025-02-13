@@ -22,6 +22,8 @@ import com.ejemplo.myapplication.models.PlantIdentificationResponse;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.gson.Gson;
+import com.google.gson.annotations.SerializedName;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -42,7 +44,7 @@ public class PlantActivity extends AppCompatActivity {
     private Button identifyPlantButton;
     private DatabaseReference userPlantsRef;
     private FirebaseAuth mAuth;
-    private static final String API_KEY = "1tGtdmzn7KENu09cshz4CYRdnk138pjDRQ4nt2aBuzvwKKEMK0"; // 🔹 Reemplaza con tu API Key de Plant.id
+    private static final String API_KEY = BuildConfig.PLANT_ID_API_KEY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class PlantActivity extends AppCompatActivity {
         resultText = findViewById(R.id.resultText);
         identifyPlantButton = findViewById(R.id.identifyPlantButton);
         Button selectImageButton = findViewById(R.id.selectImageButton);
+        Button viewPlantsButton = findViewById(R.id.viewPlantsButton);
 
         mAuth = FirebaseAuth.getInstance();
         String userId = mAuth.getCurrentUser().getUid();
@@ -60,6 +63,7 @@ public class PlantActivity extends AppCompatActivity {
 
         selectImageButton.setOnClickListener(view -> openGallery());
         identifyPlantButton.setOnClickListener(view -> identifyPlant());
+        viewPlantsButton.setOnClickListener(view -> startActivity(new Intent(this, PlantListActivity.class)));
     }
 
     private void openGallery() {
@@ -72,9 +76,17 @@ public class PlantActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null) {
             imageUri = data.getData();
-            imageView.setImageURI(imageUri);
+            try {
+                // Convertir la URI de la imagen a un Bitmap y cargarla en el ImageView
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
+                imageView.setImageBitmap(bitmap);
+            } catch (IOException e) {
+                e.printStackTrace();
+                Toast.makeText(this, "Error al cargar la imagen", Toast.LENGTH_SHORT).show();
+            }
         }
     }
+
 
     private void identifyPlant() {
         if (imageUri == null) {
@@ -99,42 +111,57 @@ public class PlantActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(Call<PlantIdentificationResponse> call, Response<PlantIdentificationResponse> response) {
                     if (response.isSuccessful() && response.body() != null) {
-                        String plantName = response.body().getSuggestions().get(0).getSpecies().getScientificName();
-                        resultText.setText("Planta: " + plantName);
-                        savePlantToFirebase(plantName);
+                        PlantIdentificationResponse apiResponse = response.body();
+
+                        if (apiResponse.getSuggestions() != null && !apiResponse.getSuggestions().isEmpty()) {
+                            PlantIdentificationResponse.Result firstResult = apiResponse.getSuggestions().get(0);
+                            if (firstResult != null && firstResult.getSpecies() != null) {
+                                String plantName = firstResult.getSpecies().getScientificName();
+                                resultText.setText("Planta: " + plantName);
+                                savePlantToFirebase(new PlantModel(plantName, "Descripción predeterminada"));
+                            }
+                        } else {
+                            Toast.makeText(PlantActivity.this, "No se encontraron coincidencias", Toast.LENGTH_SHORT).show();
+                        }
                     } else {
-                        Toast.makeText(PlantActivity.this, "No se pudo identificar la planta", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PlantActivity.this, "Error: " + response.message(), Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<PlantIdentificationResponse> call, Throwable t) {
-                    Toast.makeText(PlantActivity.this, "Error en la API", Toast.LENGTH_SHORT).show();
-                    Log.e("Plant ID Error", t.getMessage());
+                    Toast.makeText(PlantActivity.this, "Error de conexión", Toast.LENGTH_SHORT).show();
+                    Log.e("API Error", t.getMessage());
                 }
             });
 
         } catch (IOException e) {
-            e.printStackTrace();
+            Toast.makeText(this, "Error al procesar imagen", Toast.LENGTH_SHORT).show();
         }
     }
 
     private String encodeImageToBase64(Bitmap bitmap) {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 80, byteArrayOutputStream);
         byte[] byteArray = byteArrayOutputStream.toByteArray();
+        try {
+            byteArrayOutputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return Base64.encodeToString(byteArray, Base64.DEFAULT);
     }
 
-    private void savePlantToFirebase(String plantName) {
+    private void savePlantToFirebase(PlantModel plant) {
         String plantId = userPlantsRef.push().getKey();
         if (plantId != null) {
-            userPlantsRef.child(plantId).setValue(plantName)
+            plant.setId(plantId);
+            userPlantsRef.child(plantId).setValue(plant)
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
-                            Toast.makeText(PlantActivity.this, "Planta guardada en Firebase", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PlantActivity.this, "Planta guardada", Toast.LENGTH_SHORT).show();
                         } else {
-                            Toast.makeText(PlantActivity.this, "Error al guardar en Firebase", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(PlantActivity.this, "Error al guardar", Toast.LENGTH_SHORT).show();
                         }
                     });
         }

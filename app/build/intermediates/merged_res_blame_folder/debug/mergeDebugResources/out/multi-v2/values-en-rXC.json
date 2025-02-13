@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.ejemplo.myapplication.app-mergeDebugResources-37:/values-en-rXC/values-en-rXC.xml",
+            "outputFile": "com.ejemplo.myapplication.app-mergeDebugResources-38:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\0d6047678f6d8e632cebc25aefc68987\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\crist\\.gradle\\caches\\8.10.2\\transforms\\b1690c8338aa26ce23492c0d4aa3d659\\transformed\\credentials-1.2.0-rc01\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\476cb3ba62f82671c27541e7a8286651\\transformed\\core-1.13.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\crist\\.gradle\\caches\\8.10.2\\transforms\\028cbb958b03c4a40f9763ac02747fc4\\transformed\\core-1.13.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\9db56199187b12252407e7ee5e2c3e92\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\crist\\.gradle\\caches\\8.10.2\\transforms\\27a1cdf31f292004b7fe17b4a4ccd1b5\\transformed\\browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\5b9097cf1d8cfa4b13033f3e8b91c97f\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\crist\\.gradle\\caches\\8.10.2\\transforms\\8d78f1439e8555183f6e05dee10a416f\\transformed\\appcompat-1.6.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

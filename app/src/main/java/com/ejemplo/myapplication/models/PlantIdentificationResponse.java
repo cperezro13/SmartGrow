@@ -1,28 +1,26 @@
 package com.ejemplo.myapplication.models;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 public class PlantIdentificationResponse {
-    private String status;
     private List<Result> suggestions;
-
-    public String getStatus() {
-        return status;
-    }
 
     public List<Result> getSuggestions() {
         return suggestions;
     }
 
     public static class Result {
-        private Plant species;
+        private Species species;
 
-        public Plant getSpecies() {
+        public Species getSpecies() {
             return species;
         }
     }
 
-    public static class Plant {
+    public static class Species {
+        @SerializedName("scientific_name")
         private String scientificName;
 
         public String getScientificName() {

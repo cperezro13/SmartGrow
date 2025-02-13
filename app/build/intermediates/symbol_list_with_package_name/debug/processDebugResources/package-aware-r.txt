@@ -295,6 +295,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2964,6 +2968,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -2996,8 +3001,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable fondo_textview
+drawable fondo_textview2
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_add
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3095,9 +3103,14 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rectangulo
+drawable rounded_background_description
+drawable rounded_background_name
+drawable rounded_item_plant
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font aileron_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3169,6 +3182,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addPlantButton
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3326,9 +3340,9 @@ id homeAsUp
 id honorRequest
 id horizontal_only
 id icon
+id iconAdd
 id icon_group
 id icon_only
-id identifyPlantButton
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3353,7 +3367,6 @@ id light
 id line1
 id line3
 id linear
-id linearLayout
 id listMode
 id list_item
 id logInButton
@@ -3469,10 +3482,9 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id plantDescriptionEditText
 id plantDescriptionTextView
-id plantNameEditText
 id plantNameTextView
+id plantsRecyclerView
 id position
 id postLayout
 id pressed
@@ -3481,9 +3493,8 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
-id recyclerView
+id rectangulo
 id report_drawn
-id resultText
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3491,7 +3502,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id savePlantButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3512,7 +3522,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id selectImageButton
 id select_dialog_listview
 id selected
 id selection_type
@@ -3576,6 +3585,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView2
+id textView6
+id textViewPasswordHint
+id textView_naturaleza
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3588,6 +3602,7 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleTextView
 id title_template
 id toggle
 id top
@@ -3742,6 +3757,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_plant
+layout activity_plant_list
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -5176,6 +5192,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
