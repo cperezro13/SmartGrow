@@ -165,12 +165,12 @@ ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:20:9-22:40
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:21:13-42
-activity#com.ejemplo.myapplication.MainActivity
+activity#com.ejemplo.myapplication.LoginActivity
 ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:24:9-31:20
 	android:exported
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:25:13-41
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:25:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN

@@ -3750,7 +3750,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_main
 layout activity_plant
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
@@ -3774,6 +3773,7 @@ layout dialog_edit_plant
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_plant
+layout login_activity
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

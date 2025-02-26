@@ -35,10 +35,10 @@ id textView2
 id textView6
 id textViewPasswordHint
 id textView_naturaleza
-layout activity_main
 layout activity_plant
 layout dialog_edit_plant
 layout item_plant
+layout login_activity
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
