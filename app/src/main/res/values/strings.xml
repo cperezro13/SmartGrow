@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">SmartGrow</string>
+
+    <!-- Cadenas para la interfaz de usuario -->
+    <string name="select_image">Seleccionar imagen</string>
+    <string name="identify_plant">Identificar planta</string>
+    <string name="selected_image">Imagen seleccionada</string>
+    <string name="result">Resultado</string>
+
+    <!-- Mensajes de error o notificaciones -->
+    <string name="error_no_image">Por favor, selecciona una imagen primero.</string>
+    <string name="error_api">Error al conectar con la API.</string>
+    <string name="success_identification">Planta identificada: %s</string>
+    <string name="title_activity_home">HomeActivity</string>
 </resources>

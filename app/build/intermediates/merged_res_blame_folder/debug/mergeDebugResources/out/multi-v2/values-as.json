@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ejemplo.myapplication.app-mergeDebugResources-37:/values-as/values-as.xml",
+            "outputFile": "com.ejemplo.myapplication.app-mergeDebugResources-43:/values-as/values-as.xml",
             "map": [
                 {
                     "source": "C:\\Users\\crist\\.gradle\\caches\\transforms-4\\9db56199187b12252407e7ee5e2c3e92\\transformed\\browser-1.4.0\\res\\values-as\\values-as.xml",

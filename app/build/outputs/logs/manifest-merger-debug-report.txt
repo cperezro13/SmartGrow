@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:2:1-50:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\crist\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\crist\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\crist\.gradle\caches\transforms-4\0354554d1b5ad0f32433bbfc28c9d029\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\crist\.gradle\caches\transforms-4\5b9097cf1d8cfa4b13033f3e8b91c97f\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\crist\.gradle\caches\transforms-4\4b5b3224851546a9950371b7edebe650\transformed\fragment-ktx-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\ddb1c347d0ab751ea971c7b59e4f8661\transformed\glide-4.12.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\crist\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\f028c542560266e207f7cee40d2b00da\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\crist\.gradle\caches\transforms-4\5920761b86a7060d123eef34b9207eda\transformed\firebase-database-21.0.0\AndroidManifest.xml:15:1-38:12
@@ -25,6 +27,8 @@ MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\c
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\crist\.gradle\caches\transforms-4\36db28e4608b49fc1fc5de041b1b3353\transformed\play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\crist\.gradle\caches\transforms-4\37387a3f761ed9f02391f107c3989223\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\crist\.gradle\caches\transforms-4\75626bc61fd327ee0b2d7f5d46f84529\transformed\play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\crist\.gradle\caches\transforms-4\e617856dae9a9fc39caf7b6a15686c17\transformed\activity-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\crist\.gradle\caches\transforms-4\fe695c62fb939d63dc1a9317f02ecd19\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\ac9d8e9b6426c57627579dcca40ce677\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\d5c3f29858040c15e099fd889c7999bb\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\dd3343b9f6cbc02e4b82e851402a1cac\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
@@ -41,8 +45,11 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\crist\.gradle\ca
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\crist\.gradle\caches\transforms-4\a96d0c8b2586999d6177e7b24839799c\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\crist\.gradle\caches\transforms-4\c6c8a2021449f42a79c445046b888b62\transformed\core-ktx-1.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core:1.13.0] C:\Users\crist\.gradle\caches\transforms-4\476cb3ba62f82671c27541e7a8286651\transformed\core-1.13.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e0161a075a3981a379e638da488899cf\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\b91d74cd18018f702f9e16349701a9ca\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\ada61df8c677b4b1ab8c025e83f605b4\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\a847a4dfd94921d0f85ec548b05d82d2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e129a9a3cbe7f99ecc4e7d8987e7f7da\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\7468605324d14f3ca300310d7899b704\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\24dcbdebef2b1efa8b7216a0f93f8e17\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\88c74bc6dead48e31a2351291651fba1\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
@@ -58,6 +65,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\crist\.gradle\caches\tra
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\crist\.gradle\caches\transforms-4\ef459029b63c719b5e88e17ad4c30818\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\0c3217a860212c7edcbbeb04aa261b1f\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\9d026e9bf00976fc2ccba8515ba25ea5\transformed\gifdecoder-4.12.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\9776398bce00b1056d8a48e6fe57534a\transformed\exifinterface-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\7a93e9099ea59946e22ece335f2b4a67\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\crist\.gradle\caches\transforms-4\b924b8875bb1e39ad5df32a3e26192e0\transformed\firebase-components-18.0.0\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\65bf35954ccd8396330082f4d3e76538\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
@@ -89,12 +98,14 @@ ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:6:5-83
 	android:name
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:6:19-57
 application
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:9:5-43:19
-INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:9:5-43:19
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:9:5-48:19
+INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml:9:5-48:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\crist\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\crist\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\crist\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\crist\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\ddb1c347d0ab751ea971c7b59e4f8661\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\ddb1c347d0ab751ea971c7b59e4f8661\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\crist\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\crist\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-database:21.0.0] C:\Users\crist\.gradle\caches\transforms-4\5920761b86a7060d123eef34b9207eda\transformed\firebase-database-21.0.0\AndroidManifest.xml:25:5-36:19
@@ -133,6 +144,8 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\crist\.g
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\crist\.gradle\caches\transforms-4\ef459029b63c719b5e88e17ad4c30818\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\9d026e9bf00976fc2ccba8515ba25ea5\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\9d026e9bf00976fc2ccba8515ba25ea5\transformed\gifdecoder-4.12.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\65bf35954ccd8396330082f4d3e76538\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\65bf35954ccd8396330082f4d3e76538\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\crist\.gradle\caches\transforms-4\d8c77af79a077686b95fc2eecea914bb\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:10:5-20
@@ -159,44 +172,56 @@ MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\crist\.gradle\ca
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:17:9-51
 	android:dataExtractionRules
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:11:9-65
-activity#com.ejemplo.myapplication.PlantActivity
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:20:9-22:40
+activity#com.ejemplo.myapplication.LoginActivity
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:20:9-27:20
 	android:exported
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:21:13-42
-activity#com.ejemplo.myapplication.LoginActivity
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:24:9-31:20
-	android:exported
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:26:13-36
-	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:25:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:27:13-30:29
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:29:27-74
-provider#androidx.core.content.FileProvider
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:32:9-40:20
-	android:grantUriPermissions
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:35:13-47
-	android:authorities
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:34:13-73
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:25:27-74
+activity#com.ejemplo.myapplication.HomeActivity
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:29:13-41
+activity#com.ejemplo.myapplication.PlantActivity
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:31:9-33:40
+	android:exported
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:32:13-42
+activity#com.ejemplo.myapplication.AdvancedSearch
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
 		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:33:13-62
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:37:13-39:57
-	android:resource
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:39:17-55
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:35:13-43
+provider#androidx.core.content.FileProvider
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:37:9-45:20
+	android:grantUriPermissions
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:39:13-73
+	android:exported
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:41:13-37
 	android:name
-		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:38:17-67
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:38:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:42:13-44:57
+	android:resource
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:44:17-55
+	android:name
+		ADDED from D:\SmartGrow\app\src\main\AndroidManifest.xml:43:17-67
 uses-sdk
 INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\SmartGrow\app\src\main\AndroidManifest.xml
@@ -209,6 +234,10 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\crist\.gradl
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\crist\.gradle\caches\transforms-4\0354554d1b5ad0f32433bbfc28c9d029\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\crist\.gradle\caches\transforms-4\5b9097cf1d8cfa4b13033f3e8b91c97f\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\crist\.gradle\caches\transforms-4\5b9097cf1d8cfa4b13033f3e8b91c97f\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\crist\.gradle\caches\transforms-4\4b5b3224851546a9950371b7edebe650\transformed\fragment-ktx-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.3.6] C:\Users\crist\.gradle\caches\transforms-4\4b5b3224851546a9950371b7edebe650\transformed\fragment-ktx-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\ddb1c347d0ab751ea971c7b59e4f8661\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\ddb1c347d0ab751ea971c7b59e4f8661\transformed\glide-4.12.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\crist\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:21:5-23:151
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\crist\.gradle\caches\transforms-4\b7ac55a38f3d833e03b0078810ac4e76\transformed\firebase-auth-23.0.0\AndroidManifest.xml:21:5-23:151
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\f028c542560266e207f7cee40d2b00da\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -243,6 +272,10 @@ MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\cri
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\crist\.gradle\caches\transforms-4\37387a3f761ed9f02391f107c3989223\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\crist\.gradle\caches\transforms-4\75626bc61fd327ee0b2d7f5d46f84529\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\crist\.gradle\caches\transforms-4\75626bc61fd327ee0b2d7f5d46f84529\transformed\play-services-base-18.1.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\crist\.gradle\caches\transforms-4\e617856dae9a9fc39caf7b6a15686c17\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\crist\.gradle\caches\transforms-4\e617856dae9a9fc39caf7b6a15686c17\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\crist\.gradle\caches\transforms-4\fe695c62fb939d63dc1a9317f02ecd19\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\crist\.gradle\caches\transforms-4\fe695c62fb939d63dc1a9317f02ecd19\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\ac9d8e9b6426c57627579dcca40ce677\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\ac9d8e9b6426c57627579dcca40ce677\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\d5c3f29858040c15e099fd889c7999bb\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -275,10 +308,16 @@ MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\crist\.gradle\caches\transf
 MERGED from [androidx.core:core-ktx:1.13.0] C:\Users\crist\.gradle\caches\transforms-4\c6c8a2021449f42a79c445046b888b62\transformed\core-ktx-1.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core:1.13.0] C:\Users\crist\.gradle\caches\transforms-4\476cb3ba62f82671c27541e7a8286651\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.13.0] C:\Users\crist\.gradle\caches\transforms-4\476cb3ba62f82671c27541e7a8286651\transformed\core-1.13.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e0161a075a3981a379e638da488899cf\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e0161a075a3981a379e638da488899cf\transformed\lifecycle-viewmodel-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\b91d74cd18018f702f9e16349701a9ca\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\b91d74cd18018f702f9e16349701a9ca\transformed\lifecycle-viewmodel-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\ada61df8c677b4b1ab8c025e83f605b4\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\ada61df8c677b4b1ab8c025e83f605b4\transformed\lifecycle-runtime-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\a847a4dfd94921d0f85ec548b05d82d2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\a847a4dfd94921d0f85ec548b05d82d2\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e129a9a3cbe7f99ecc4e7d8987e7f7da\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\e129a9a3cbe7f99ecc4e7d8987e7f7da\transformed\lifecycle-livedata-core-ktx-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\7468605324d14f3ca300310d7899b704\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\7468605324d14f3ca300310d7899b704\transformed\lifecycle-livedata-core-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.2] C:\Users\crist\.gradle\caches\transforms-4\24dcbdebef2b1efa8b7216a0f93f8e17\transformed\lifecycle-livedata-2.6.2\AndroidManifest.xml:20:5-44
@@ -309,6 +348,10 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\crist\.gradle\cach
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\crist\.gradle\caches\transforms-4\524ade159e07b0b1217bfb1e70d29b2d\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\0c3217a860212c7edcbbeb04aa261b1f\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\0c3217a860212c7edcbbeb04aa261b1f\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\9d026e9bf00976fc2ccba8515ba25ea5\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] C:\Users\crist\.gradle\caches\transforms-4\9d026e9bf00976fc2ccba8515ba25ea5\transformed\gifdecoder-4.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\9776398bce00b1056d8a48e6fe57534a\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] C:\Users\crist\.gradle\caches\transforms-4\9776398bce00b1056d8a48e6fe57534a\transformed\exifinterface-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\7a93e9099ea59946e22ece335f2b4a67\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\crist\.gradle\caches\transforms-4\7a93e9099ea59946e22ece335f2b4a67\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\crist\.gradle\caches\transforms-4\b924b8875bb1e39ad5df32a3e26192e0\transformed\firebase-components-18.0.0\AndroidManifest.xml:18:5-44

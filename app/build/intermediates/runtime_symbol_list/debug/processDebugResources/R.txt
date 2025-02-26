@@ -1377,6 +1377,9 @@ int color cardview_dark_background 0x7f050030
 int color cardview_light_background 0x7f050031
 int color cardview_shadow_end_color 0x7f050032
 int color cardview_shadow_start_color 0x7f050033
+int color colorAccent 0x7f0502f8
+int color colorPrimary 0x7f0502f9
+int color colorPrimaryDark 0x7f0502fa
 int color common_google_signin_btn_text_dark 0x7f050034
 int color common_google_signin_btn_text_dark_default 0x7f050035
 int color common_google_signin_btn_text_dark_disabled 0x7f050036
@@ -3175,6 +3178,7 @@ int id action_text 0x7f090043
 int id actions 0x7f090044
 int id activity_chooser_view_content 0x7f090045
 int id add 0x7f090046
+int id addPlantButton 0x7f090212
 int id adjust_height 0x7f090047
 int id adjust_width 0x7f090048
 int id alertTitle 0x7f090049
@@ -3318,6 +3322,7 @@ int id frost 0x7f0900d2
 int id fullscreen_header 0x7f0900d3
 int id ghost_view 0x7f0900d4
 int id ghost_view_holder 0x7f0900d5
+int id glide_custom_view_target_tag 0x7f090213
 int id gone 0x7f0900d6
 int id graph 0x7f0900d7
 int id graph_wrap 0x7f0900d8
@@ -3334,6 +3339,7 @@ int id horizontal_only 0x7f0900e2
 int id icon 0x7f0900e3
 int id icon_group 0x7f0900e4
 int id icon_only 0x7f0900e5
+int id identifyPlantButton 0x7f090214
 int id ifRoom 0x7f0900e6
 int id ignore 0x7f0900e7
 int id ignoreRequest 0x7f0900e8
@@ -3489,6 +3495,7 @@ int id rectangles 0x7f09017d
 int id rectangulo 0x7f09017e
 int id recyclerView 0x7f09017f
 int id report_drawn 0x7f090180
+int id resultTextView 0x7f090215
 int id reverseSawtooth 0x7f090181
 int id right 0x7f090182
 int id rightToLeft 0x7f090183
@@ -3517,6 +3524,7 @@ int id search_mag_icon 0x7f090199
 int id search_plate 0x7f09019a
 int id search_src_text 0x7f09019b
 int id search_voice_btn 0x7f09019c
+int id selectImageButton 0x7f090216
 int id select_dialog_listview 0x7f09019d
 int id selected 0x7f09019e
 int id selection_type 0x7f09019f
@@ -3558,6 +3566,7 @@ int id stop 0x7f0901c2
 int id stretch 0x7f0901c3
 int id submenuarrow 0x7f0901c4
 int id submit_area 0x7f0901c5
+int id suggestionsImageLayout 0x7f090217
 int id supportScrollUp 0x7f0901c6
 int id tabMode 0x7f0901c7
 int id tag_accessibility_actions 0x7f0901c8
@@ -3749,7 +3758,9 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_home 0x7f0c0071
 int layout activity_plant 0x7f0c001c
+int layout activity_search 0x7f0c0072
 int layout browser_actions_context_menu_page 0x7f0c001d
 int layout browser_actions_context_menu_row 0x7f0c001e
 int layout custom_dialog 0x7f0c001f
@@ -3907,7 +3918,9 @@ int string common_signin_button_text 0x7f110041
 int string common_signin_button_text_long 0x7f110042
 int string copy_toast_msg 0x7f110043
 int string error_a11y_label 0x7f110044
+int string error_api 0x7f1100c6
 int string error_icon_content_description 0x7f110045
+int string error_no_image 0x7f1100c7
 int string exposed_dropdown_menu_content_description 0x7f110046
 int string fab_transformation_scrim_behavior 0x7f110047
 int string fab_transformation_sheet_behavior 0x7f110048
@@ -3922,6 +3935,7 @@ int string google_crash_reporting_api_key 0x7f110050
 int string google_storage_bucket 0x7f110051
 int string hide_bottom_view_on_scroll_behavior 0x7f110052
 int string icon_content_description 0x7f110053
+int string identify_plant 0x7f1100c8
 int string item_view_role_description 0x7f110054
 int string m3_exceed_max_badge_text_suffix 0x7f110055
 int string m3_ref_typeface_brand_medium 0x7f110056
@@ -4029,13 +4043,18 @@ int string path_password_eye_mask_strike_through 0x7f1100bb
 int string path_password_eye_mask_visible 0x7f1100bc
 int string path_password_strike_through 0x7f1100bd
 int string project_id 0x7f1100be
+int string result 0x7f1100c9
 int string search_menu_title 0x7f1100bf
 int string searchbar_scrolling_view_behavior 0x7f1100c0
 int string searchview_clear_text_content_description 0x7f1100c1
 int string searchview_navigation_content_description 0x7f1100c2
+int string select_image 0x7f1100ca
+int string selected_image 0x7f1100cb
 int string side_sheet_accessibility_pane_title 0x7f1100c3
 int string side_sheet_behavior 0x7f1100c4
 int string status_bar_notification_info_overflow 0x7f1100c5
+int string success_identification 0x7f1100cc
+int string title_activity_home 0x7f1100cd
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002
@@ -4047,6 +4066,7 @@ int style Animation_Material3_SideSheetDialog 0x7f120007
 int style Animation_Material3_SideSheetDialog_Left 0x7f120008
 int style Animation_Material3_SideSheetDialog_Right 0x7f120009
 int style Animation_MaterialComponents_BottomSheetDialog 0x7f12000a
+int style AppTheme 0x7f12045e
 int style Base_AlertDialog_AppCompat 0x7f12000b
 int style Base_AlertDialog_AppCompat_Light 0x7f12000c
 int style Base_Animation_AppCompat_Dialog 0x7f12000d

@@ -38,9 +38,6 @@
         android:testOnly="true"
         android:theme="@style/Theme.MyApplication" >
         <activity
-            android:name="com.ejemplo.myapplication.PlantActivity"
-            android:exported="false" />
-        <activity
             android:name="com.ejemplo.myapplication.LoginActivity"
             android:exported="true" >
             <intent-filter>
@@ -49,6 +46,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.ejemplo.myapplication.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ejemplo.myapplication.PlantActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ejemplo.myapplication.AdvancedSearch"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
