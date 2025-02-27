@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondoaplant"
+    android:padding="16dp">
+
+    <!-- ImageView con imagen por defecto (puede ser un GIF si lo deseas) -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/selected_image"
+        android:background="#e0e0e0"
+        android:src="@drawable/default_image" />
+
+    <!-- Botón para seleccionar imagen -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Imagen"
+        android:backgroundTint="#447B57"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/takePhotoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomar Foto"
+        android:backgroundTint="#447B57" />
+
+    <!-- Botón para iniciar el reconocimiento -->
+    <Button
+        android:id="@+id/recognizeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reconocer Planta"
+        android:backgroundTint="#1B401C" />
+
+</LinearLayout>

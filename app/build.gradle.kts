@@ -55,7 +55,9 @@ dependencies {
     // Bibliotecas de Android Jetpack para actividades y fragmentos
     implementation("androidx.activity:activity-ktx:1.3.1")
     implementation("androidx.fragment:fragment-ktx:1.3.6")
+    implementation ("com.google.android.material:material:1.7.0")
     // Glide para cargar imágenes
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0") // Para Kotlin, usa kapt en lugar de annotationProcessor
+    implementation ("androidx.work:work-runtime:2.8.1")
 }

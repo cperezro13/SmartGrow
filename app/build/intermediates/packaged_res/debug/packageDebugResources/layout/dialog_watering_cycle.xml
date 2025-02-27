@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Etiqueta y campo para ingresar el ciclo de riego -->
+    <TextView
+        android:id="@+id/cycleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciclo de riego (en dias):" />
+
+    <EditText
+        android:id="@+id/cycleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Ingresa un número" />
+
+    <!-- Etiqueta y vista para seleccionar la fecha del último riego -->
+    <TextView
+        android:id="@+id/lastWateredLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Último riego:"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/lastWateredTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="#EEEEEE"
+        android:text="Selecciona una fecha" />
+
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elegir fecha"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

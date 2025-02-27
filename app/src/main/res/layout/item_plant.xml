@@ -1,81 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardElevation="4dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:background="@drawable/rounded_item_plant"
-        android:orientation="vertical">
+        android:padding="10dp">
 
-        <!-- Fila superior con textos a la izquierda e imagen a la derecha -->
+        <!-- Contenedor de textos a la izquierda -->
+
+        <!-- Imagen de la planta al lado derecho -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/textContainer"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/plantImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <!-- Columna izquierda: nombre y descripción -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/plantNameTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre de la Planta"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:background="@drawable/rounded_background"/>
-
-                <TextView
-                    android:id="@+id/plantDescriptionTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Descripción de la Planta"
-                    android:textSize="14sp"
-                    android:textColor="#FFFFFF"
-                    android:padding="8dp"
-                    android:layout_marginTop="4dp"
-                    android:background="@drawable/rounded_background"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- Fila inferior: botones -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal"
-            android:gravity="end">
-
-            <Button
-                android:id="@+id/editPlantButton"
+            <!-- Nombre científico (inmutable) -->
+            <TextView
+                android:id="@+id/scientificNameTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#4CAF50"
-                android:text="Editar"
-                android:textColor="#F2F2E6"
-                android:layout_marginEnd="8dp" /> <!-- Añadido margen a la derecha -->
-
-            <Button
-                android:id="@+id/deletePlantButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Eliminar"
+                android:background="@drawable/rounded_background"
+                android:padding="8dp"
+                android:text="Nombre científico"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#064207"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- EditText para nombre personalizado -->
+            <EditText
+                android:id="@+id/customNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/rounded_background"
+                android:hint="Nombre personalizado"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#878787" />
+
+            <!-- TextView para mostrar la información de la Wiki -->
+
+            <!-- TextView para la información de riego -->
+            <TextView
+                android:id="@+id/wikiInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_background"
+                android:padding="8dp"
+                android:text="Información de la Wiki..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wateringInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/fondo_textview"
+                android:padding="4dp"
+                android:text="Faltan 0 días para regarla!"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </LinearLayout>
-    </LinearLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/plantImageView"
+            android:layout_width="131dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/plant_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_plant_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImageViewStyle"
+            app:strokeColor="#272727"
+            app:strokeWidth="6dp" />
+
+        <!-- Contenedor de botones en la esquina inferior derecha -->
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="123dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/fondoic"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageButton
+                android:id="@+id/editPlantButton"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginEnd="18dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/fondoriego"
+                android:contentDescription="@string/edit_plant"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_riego" />
+
+            <ImageButton
+                android:id="@+id/deletePlantButton"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/fondodelete"
+                android:contentDescription="@string/delete_plant"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_delete" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

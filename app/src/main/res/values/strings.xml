@@ -7,10 +7,15 @@
     <string name="identify_plant">Identificar planta</string>
     <string name="selected_image">Imagen seleccionada</string>
     <string name="result">Resultado</string>
+    <string name="edit_plant">Editar Planta</string>
+    <string name="delete_plant">Eliminar Planta</string>
+
+
 
     <!-- Mensajes de error o notificaciones -->
     <string name="error_no_image">Por favor, selecciona una imagen primero.</string>
     <string name="error_api">Error al conectar con la API.</string>
     <string name="success_identification">Planta identificada: %s</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="plant_image">Imagen de la planta</string>
 </resources>

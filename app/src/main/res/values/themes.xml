@@ -10,6 +10,14 @@
     <!-- Tema principal de la aplicación -->
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
 
+    <style name="RoundedImageViewStyle">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+    </style>
+
+
     <!-- Tema alternativo (AppTheme) -->
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>

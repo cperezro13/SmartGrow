@@ -1,62 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondoaplant"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MIS PLANTAS"
-        android:fontFamily="@font/aileron_light"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/rounded_background"
-        android:layout_marginBottom="16dp"/>
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/plantNameEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/fondo_textview"
-        android:layout_marginBottom="12dp"
-        android:hint="Nombre de la planta" />
+    <!-- Encabezado -->
 
-    <EditText
-        android:id="@+id/plantDescriptionEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/fondo_textview"
-        android:layout_marginBottom="12dp"
-        android:hint="Descripción de la planta" />
+    <!-- RecyclerView para la lista de plantas -->
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="450dp"
+        android:layout_height="60dp">
 
+        <!-- Rectángulo de fondo -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#447C57" />  <!-- Cambia el color según necesites -->
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_background"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="MIS PLANTAS"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 
-    <Button
-        android:id="@+id/savePlantButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1B401C"
-        android:fontFamily="@font/aileron_light"
-        android:textStyle="bold"
-        android:text="Guardar Planta" />
-
-    <Button
-        android:id="@+id/recognizePlantButton"
-        android:layout_width="336dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#2B5A87"
-        android:fontFamily="@font/aileron_light"
-        android:textStyle="bold"
-        android:text="Reconocer Planta" />
-
-
+    <!-- FloatingActionButton para agregar (o reconocer) plantas -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-</LinearLayout>
+        android:layout_height="703dp"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/recognizePlantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_recognize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:maxImageSize="48dp"
+        app:backgroundTint="#389B5C"
+        android:layout_margin="19dp" />
+
+</RelativeLayout>

@@ -6,6 +6,8 @@
     <color name="colorPrimaryDark">#272727</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">SmartGrow</string>
+    <string name="delete_plant">Eliminar Planta</string>
+    <string name="edit_plant">Editar Planta</string>
     <string name="error_api">Error al conectar con la API.</string>
     <string name="error_no_image">Por favor, selecciona una imagen primero.</string>
     <string name="firebase_database_url" translatable="false">https://smartgrow-b53f4-default-rtdb.firebaseio.com</string>
@@ -15,6 +17,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0</string>
     <string name="google_storage_bucket" translatable="false">smartgrow-b53f4.firebasestorage.app</string>
     <string name="identify_plant">Identificar planta</string>
+    <string name="plant_image">Imagen de la planta</string>
     <string name="project_id" translatable="false">smartgrow-b53f4</string>
     <string name="result">Resultado</string>
     <string name="select_image">Seleccionar imagen</string>
@@ -31,6 +34,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="RoundedImageViewStyle">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
     </style>
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication"/>
 </resources>
