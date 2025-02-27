@@ -15,6 +15,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDFRKLjwRcnt-4f7AC681kZ9T7169BBmp0</string>
     <string name="google_storage_bucket" translatable="false">smartgrow-b53f4.firebasestorage.app</string>
     <string name="identify_plant">Identificar planta</string>
+    <string name="plant_image">Imagen de la planta</string>
     <string name="project_id" translatable="false">smartgrow-b53f4</string>
     <string name="result">Resultado</string>
     <string name="select_image">Seleccionar imagen</string>

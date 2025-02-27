@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -6,56 +7,72 @@
     android:layout_margin="8dp"
     app:cardElevation="4dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:background="@drawable/rounded_item_plant"
-        android:orientation="vertical">
+        android:padding="16dp">
 
-        <!-- Fila superior con textos a la izquierda e imagen a la derecha -->
+        <!-- Contenedor de textos a la izquierda -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/textContainer"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/plantImageView"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
 
-            <!-- Columna izquierda: nombre y descripción -->
-            <LinearLayout
-                android:layout_width="0dp"
+            <!-- Nombre científico (inmutable) -->
+            <TextView
+                android:id="@+id/scientificNameTextView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:text="Nombre científico"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:background="@drawable/rounded_background" />
 
-                <TextView
-                    android:id="@+id/plantNameTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nombre de la Planta"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"
-                    android:padding="8dp"
-                    android:gravity="center"
-                    android:background="@drawable/rounded_background"/>
+            <!-- EditText para nombre personalizado -->
+            <EditText
+                android:id="@+id/customNameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre personalizado"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_background"
+                android:padding="8dp" />
 
-                <TextView
-                    android:id="@+id/plantDescriptionTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Descripción de la Planta"
-                    android:textSize="14sp"
-                    android:textColor="#FFFFFF"
-                    android:padding="8dp"
-                    android:layout_marginTop="4dp"
-                    android:background="@drawable/rounded_background"/>
-            </LinearLayout>
+            <!-- TextView para mostrar la información de la Wiki -->
+            <TextView
+                android:id="@+id/wikiInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información de la Wiki..."
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_background" />
         </LinearLayout>
 
-        <!-- Fila inferior: botones -->
+        <!-- Imagen de la planta al lado derecho -->
+        <ImageView
+            android:id="@+id/plantImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_plant_image"
+            android:contentDescription="@string/plant_image" />
+
+        <!-- Botones para editar y eliminar (opcional) -->
         <LinearLayout
+            android:id="@+id/buttonContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/textContainer"
             android:layout_marginTop="12dp"
             android:orientation="horizontal"
             android:gravity="end">
@@ -67,7 +84,7 @@
                 android:backgroundTint="#4CAF50"
                 android:text="Editar"
                 android:textColor="#F2F2E6"
-                android:layout_marginEnd="8dp" /> <!-- Añadido margen a la derecha -->
+                android:layout_marginEnd="8dp" />
 
             <Button
                 android:id="@+id/deletePlantButton"
@@ -75,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:text="Eliminar"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#064207"/>
+                android:backgroundTint="#064207" />
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

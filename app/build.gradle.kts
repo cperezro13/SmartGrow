@@ -58,4 +58,5 @@ dependencies {
     // Glide para cargar imágenes
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0") // Para Kotlin, usa kapt en lugar de annotationProcessor
+    implementation ("androidx.work:work-runtime:2.8.1")
 }

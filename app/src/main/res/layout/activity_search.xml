@@ -4,30 +4,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
+
+    <!-- ImageView con imagen por defecto -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="350dp"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/selected_image" />
+        android:contentDescription="@string/selected_image"
+        android:src="@drawable/default_image" />
+
     <Button
         android:id="@+id/selectImageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#1B401C"
         android:text="@string/select_image" />
+
     <Button
         android:id="@+id/identifyPlantButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#1B401C"
         android:text="@string/identify_plant" />
-    <TextView
-        android:id="@+id/resultTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/result"
-        android:paddingTop="16dp" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1325,7 +1325,11 @@ attr yearStyle
 attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -2967,6 +2971,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_local_florist_24
 drawable bg
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -2995,11 +3000,14 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_image
+drawable default_plant_image
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable error_image
 drawable fondo_textview
 drawable fondo_textview2
 drawable googleg_disabled_color_18
@@ -3026,7 +3034,9 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_other_sign_in
 drawable ic_passkey
 drawable ic_password
+drawable ic_recognize
 drawable ic_search_black_24
+drawable ic_watering
 drawable logo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
@@ -3179,7 +3189,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addPlantButton
 id adjust_height
 id adjust_width
 id alertTitle
@@ -3214,6 +3223,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id buttonContainer
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3251,6 +3261,7 @@ id counterclockwise
 id cradle
 id currentState
 id custom
+id customNameEditText
 id customPanel
 id cut
 id dark
@@ -3290,8 +3301,6 @@ id easeOut
 id east
 id edge
 id editPlantButton
-id editPlantDescription
-id editPlantName
 id edit_query
 id edit_text_id
 id elastic
@@ -3330,6 +3339,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id headerTextView
 id header_title
 id hide_ime_id
 id hideable
@@ -3480,10 +3490,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id plantDescriptionEditText
-id plantDescriptionTextView
-id plantNameEditText
-id plantNameTextView
+id plantImageView
 id position
 id postLayout
 id pressed
@@ -3491,12 +3498,12 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recognizeButton
 id recognizePlantButton
 id rectangles
 id rectangulo
 id recyclerView
 id report_drawn
-id resultTextView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3504,11 +3511,11 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id savePlantButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scientificNameTextView
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3567,6 +3574,9 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id suggestionImageView
+id suggestionListView
+id suggestionTextView
 id suggestionsImageLayout
 id supportScrollUp
 id tabMode
@@ -3585,6 +3595,7 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textContainer
 id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -3634,8 +3645,10 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wateringCycleSpinner
 id west
 id wide
+id wikiInfoTextView
 id withText
 id with_icon
 id withinBounds
@@ -3759,9 +3772,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_home
 layout activity_plant
 layout activity_search
+layout activity_tensorflow_search
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3780,7 +3793,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout dialog_edit_plant
+layout dialog_item_suggestion
+layout dialog_suggestions
+layout dialog_watering_cycle
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_plant
@@ -4043,6 +4058,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string plant_image
 string project_id
 string result
 string search_menu_title

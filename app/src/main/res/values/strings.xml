@@ -13,4 +13,5 @@
     <string name="error_api">Error al conectar con la API.</string>
     <string name="success_identification">Planta identificada: %s</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="plant_image">Imagen de la planta</string>
 </resources>

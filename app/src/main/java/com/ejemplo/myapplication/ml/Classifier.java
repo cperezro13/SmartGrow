@@ -1,4 +1,4 @@
-package com.ejemplo.myapplication;
+package com.ejemplo.myapplication.ml;
 
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
-import java.util.Arrays;
 
 public class Classifier {
     private Interpreter interpreter;
