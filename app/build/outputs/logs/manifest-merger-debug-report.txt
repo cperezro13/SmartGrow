@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-51:12
-INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\admin\.gradle\caches\transforms-4\0354554d1b5ad0f32433bbfc28c9d029\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -113,8 +113,8 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\admin\.grad
 	android:name
 		ADDED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:10:5-49:19
-INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:10:5-49:19
+ADDED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:10:5-51:19
+INJECTED from C:\Users\admin\StudioProjects\Smartgroww\app\src\main\AndroidManifest.xml:10:5-51:19
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\admin\.gradle\caches\transforms-4\036bb409defbb4d72c6eca08ac3cde6a\transformed\material-1.10.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\admin\.gradle\caches\transforms-4\9817e501ec6df4e3e0083939aa7f42e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
