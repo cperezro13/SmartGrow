@@ -1,3 +1,10 @@
+# Proyecto SmartGrow
+Esta aplicación es un sistema de cuidado de plantas que permite a los usuarios crear y gestionar un jardín virtual. Utiliza Firebase para la autenticación y almacenamiento, integra el reconocimiento de plantas mediante una API y TensorFlow Lite, y envía notificaciones para recordar el riego oportuno.<br/>
+Toda la informacion de la aplicacion se encuentra en el siguiente documento:<br/>
+https://docs.google.com/document/d/1lzc8PjHaTsfgDxGshXcekS7u7Q-o6BncgWY1GTJy8vs/edit?usp=sharing<br/>
+Y este es un video con la explicacion de la app, una muestra de funcionamiento y explicacion del codigo:<br/>
+https://youtu.be/CzRH-3lP6OQ<br/>
+</pre>
 # Historias de usuario  
 <pre>Sprint	 		Historia de usuario
 	
@@ -53,97 +60,104 @@
 	
 				8.2 Realizar una base de datos sencilla para entrenar un modelo de reconocimiento
 	
-  			9.El cliente quiere incluir un apartado donde le indican el nombre cientifico de la planta identificada
+  			9.El cliente quiere incluir un apartado donde le indican el nombre cientifico de la planta identificada e informacion sobre la planta
 	
-				9.1 Incorporarar una base de datos con el nombre cientifico
+				9.1 Incorporarar funcion de la API para proporcionar el nombre cientifico e informacion de la planta
 	
-				9.2 Hacer uso de una api externa para poder visualizar diferentes caracteristicas 				
+				9.2 Incorporarar en el codigo informacion de la planta para que las plantas reconocidas con el modelo tambien muestren informacion de la planta		
+	
+  			10.El cliente quiere poder identificar la planta mediante una foto tomada en la app y tambien seleccionando desde la galeria
+	
+				10.1 Incorporarar funcion de camara en la app para tomar fotos
+	
+				10.2 Incorporarar funcion de abrir galeria para seleccionar una foto
 
- 			10.El cliente quiere que la aplicación guarde las personalizaciones del usuario para ofrecer un mejor servicio	
+#4 			11.El cliente quiere que la aplicación cuente con la funcion de registrar y personalizar el ciclo de riego de cada planta
+	
+				11.1 Incorporarar funcion en la aplicacion para que cada planta tenga su propio ciclo de riego elejido por el usuario
+	
+				11.2 Incorporarar funcion en la aplicacion para que el usuario pueda elejir los dias de ciclo de riego y el ultimo dia en que rego la planta
 
-#4			11.El cliente quiere que la aplicación consulte el inventario de su tienda en la nube para mostrar un inventario actualizado	
+			12.El cliente quiere que la aplicación guarde las personalizaciones del usuario para ofrecer un mejor servicio
+	
+				12.1 Incorporarar funcion en la aplicacion para que el ciclo de riego de cada planta se guarde en firebase
+	
+				12.2 Incorporarar funcion en la aplicacion para que el ultimo dia de riego de cada planta se guarde en firebase
 
-   			12.El cliente quiere que sus clientes puedan escribir y leer comentarios sobre la tienda para interesar a posibles compradores	
+   			13.El cliente quiere poder saber cuantos dias faltan para regar la planta
+	
+				13.1 Incorporarar funcion en la aplicacion para que cuente cuantos dias faltan para regar la planta
+	
+				13.2 Implementar la funcion y mostrar cuantos dias faltan para regar la planta en el apartado de cada una
 
- 			13.El cliente quiere que la aplicación cuente con un lector de código de barras para que sus clientes puedan conocer mejor sus productos	
+#5 			14.El cliente quiere que la aplicación cuente con sistema de notificaciones
+	
+				14.1 Implementar una funcion en la aplicacion para el dia que deba regar una planta la aplicacion le mande una notificacion
+	
+				14.2 Conectar la funcion de notificacion con firebase para que pueda saber si alguna planta se debe regar ese dia
 
-#5			14.El cliente quiere que la aplicación muestre su cuenta de instagram para mejorar la interacción con sus clientes			
-
-  			15.El cliente quiere que se muestre la ubicación geografica de su tienda para que sus clientes sepan donde encontrarlo		
+			15.El cliente quiere que la aplicación muestre su cuenta de instagram para mejorar la interacción con sus clientes			
+	
 </pre>
 # Requerimientos 
 <pre>Requerimientos	
-Momentos	
-1.	Usar el lenguaje java para el manejo de la base de datos
-	
-2.	Usar android studio para la creacion de la aplicacion 
-	
-3.	Usar firebase para realizar la base de datos de la apliacion 
-	
-4.	Implementar un sistema de registro de cada planta del usuario, dentro de jardin virtual
-	
-5.	Permitir al usuario modificar sus preferencias de las notificaciones push up
-	
-6.	Crear una aplicacion que notifique al usuario acerca del estado de la planta
-	
-7.	Diseño de una interfaz intuitiva y atractiva que permita a los usuarios navegar fácilmente por la aplicación.
-	
-8.	Integración de menús para modificar la frecuencia y duración del riego.
-	
-9.	Integración de un sistema de reconocimiento de plantas mediante imágenes.
-	
-10.	El sistema debe tener la API de google lens como sistema de reconocimiento.
-	
-11.	Importar las bases de datos climatologicas y botanicas.
-	
-12.	Implementación de algoritmos para determinar los ciclos de riego y la cantidad de luz requerida por cada tipo de planta.
-	
-13.	Consideración de factores como la especie de la planta, condiciones climáticas locales y estación del año para ajustar las recomendaciones.
-	
-14.	Personalizar las recomendaciones de cuidado según la etapa de vida de la planta (semilla, plántula, adulta, etc.)
-	
-15.	Implementar un sistema que permite el ingreso de varias plantas para un mismo usuario con sus distintos atributos
-	
-16.	Dentro de la aplicacion visualizar distintas recomendaciones basadas en la base de datos botanica
-	
-17.	Crear una checklist de recomendaciones al usuario que puede dar por cumplidas dentro de la aplicacion
+    Momentos	
+	1.	Utilizar Java como lenguaje principal para el desarrollo de la aplicación.
 
-18.	Crear un menu dentro de la aplicacion para la configuracion de la misma en distintos aspectos como lo puede ser la personalizacion de notificaciones
-	
-19.	Crear un menu que permite visualizar un registro de la actividad del dispositivo y de la planta 
-	
-20.	Crear un login desde el cual el usuario pueda ingresar sus datos y se verifique con los de la base de datos
-	
-21.	Crear un apartado desde el cual el usuario pueda registrar sus datos por primera vez 
-	
-22.	Crear una funcionalidad que envíe recordatorios para regar las plantas según las necesidades específicas de cada una
-	
-23.	Permitir que los usuarios registren y visualicen el progreso de crecimiento de cada planta con fotos y anotaciones
-	
-24.	Ofrecer una sección con información detallada sobre las plantas registradas, incluyendo cuidados generales y curiosidades
-	
-25.	Incluir filtros de búsqueda en la aplicación para encontrar rápidamente plantas específicas en el jardín virtual
-	
-26.	Ofrecer un panel de estadísticas que muestre cantidad de plantas cuidadas y frecuencia de riego
-	
-27.	Permitir que los usuarios etiqueten sus plantas con nombres o etiquetas personalizadas para una mejor organización en el jardín virtual
-	
-28.	Agregar un calendario para que los usuarios planifiquen y registren actividades relacionadas con sus plantas, como fechas de trasplante o poda
-	
-29.	Analizar las fotos de las plantas para detectar posibles signos de enfermedades o problemas de crecimiento y notificar al usuario
-	
-30.	Permitir el uso de sensores del dispositivo como el  GPS para la identificacionn precisa de las plantas
-</pre>
+	2.	Desarrollar la aplicación en Android Studio aprovechando sus herramientas de diseño, depuración y pruebas.
 
-# Diagrama de Clases y de casos de uso  
-![0](https://github.com/user-attachments/assets/a8301384-21c0-4be4-baf0-2b3bdda6f4c6)
-![image](https://github.com/user-attachments/assets/f87c9666-dee1-44e8-b7e3-ff6339e6d21a)
+	3.	Implementar un sistema de login y registro usando Firebase Authentication.
 
-# Casos de usos detallados
+	4.	Utilizar Firebase Realtime Database para almacenar y gestionar la información de las plantas.
 
-![image](https://github.com/user-attachments/assets/7292ff9b-f735-42be-8505-2368b89725c4)
+	5.	Permitir que los usuarios registren múltiples plantas en un “jardín virtual”.
 
-![image](https://github.com/user-attachments/assets/9b9de2b7-6197-4586-87d1-32333245435e)
+	6.	Cada planta deberá contar con su nombre científico (inmutable) que se muestre en la aplicación.
 
-![image](https://github.com/user-attachments/assets/982cd682-9128-4610-ad23-c9692fe27eb4)
+	7.	Permitir que el usuario asigne un nombre personalizado a cada planta.
 
+	8.	Guardar la imagen de cada planta, pudiendo ser seleccionada desde la galería o capturada directamente con la cámara.
+
+	9.	Incluir un campo para almacenar información extra (por ejemplo, extracto de Wikipedia) sobre cada planta.
+
+	10.	Registrar el ciclo de riego en días, que determine la frecuencia de riego de la planta.
+
+	11.	Registrar la fecha del último riego mediante un timestamp, para calcular cuándo debe regarse la planta.
+
+	12.	Permitir que el usuario seleccione imágenes desde la galería para identificar o registrar una planta.
+
+	13.	Permitir que el usuario capture una foto directamente desde la aplicación usando la cámara.
+
+	14.	Utilizar FileProvider para crear y gestionar archivos temporales cuando se captura una imagen.
+
+	15.	Mostrar la lista de plantas registradas en un RecyclerView, facilitando la navegación por el “jardín virtual”.
+
+	16.	Utilizar Glide para cargar y mostrar las imágenes de las plantas de forma eficiente.
+
+	17.	Implementar un sistema de reconocimiento de plantas que envíe la imagen (convertida a Base64) a una API externa (Plant.id).
+
+	18.	Convertir la imagen a Base64 mediante un método utilitario para enviarla a la API.
+
+	19.	Parsear la respuesta JSON de la API para obtener sugerencias (nombre, probabilidad, extracto de Wikipedia, imagen similar).
+
+	20.	Mostrar las sugerencias de la API en un diálogo usando un adapter (SuggestionAdapter) y permitir la selección de una opción.
+
+	21.	Al seleccionar una sugerencia, crear un PlantModel con los datos recibidos y guardarlo en Firebase.
+
+	22.	Implementar el reconocimiento de plantas de forma local mediante un modelo TensorFlow Lite.
+
+	23.	Redimensionar y normalizar las imágenes (por ejemplo, a 224x224) antes de enviarlas al modelo, usando ImageUtils.preprocessImage().
+
+	24.	Utilizar un clasificador (Classifier) para predecir la especie de la planta y obtener un vector de probabilidades.
+
+	25.	Con base en el resultado del modelo TFLite, asignar manualmente información extra a la planta mediante un bloque switch-case.
+
+	26.	Crear un PlantModel con los datos del reconocimiento TensorFlow (nombre, infoText, imagen) y guardarlo en Firebase.
+
+	27.	Permitir que el usuario modifique el nombre personalizado y otros datos de la planta, actualizándolos en Firebase.
+
+	28.	Incluir un diálogo que permita al usuario actualizar el ciclo de riego (número de días) y seleccionar la fecha del último riego mediante un DatePicker.
+
+	29.	Calcular, para cada planta, la diferencia entre el tiempo actual y la fecha en que se debe regar (lastWatered + wateringCycle en milisegundos) y mostrar este dato en la interfaz.
+
+	30.	Implementar un Worker (WateringWorker) usando WorkManager que consulte periódicamente las plantas en Firebase y envíe notificaciones push cuando se cumplan las condiciones de riego.
