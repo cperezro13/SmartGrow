@@ -3,7 +3,7 @@ Esta aplicación es un sistema de cuidado de plantas que permite a los usuarios 
 Toda la informacion de la aplicacion se encuentra en el siguiente documento:<br/>
 https://docs.google.com/document/d/1lzc8PjHaTsfgDxGshXcekS7u7Q-o6BncgWY1GTJy8vs/edit?usp=sharing<br/>
 Y este es un video con la explicacion de la app, una muestra de funcionamiento y explicacion del codigo:<br/>
-https://youtu.be/CzRH-3lP6OQ<br/>
+https://www.youtube.com/watch?v=3cnEqp80PaM<br/>
 </pre>
 # Historias de usuario  
 <pre>Sprint	 		Historia de usuario
