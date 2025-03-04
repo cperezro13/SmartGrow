@@ -16,7 +16,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class PlantApiManager {
-    private static final String API_KEY = "39wVjmrXbjRE6DJBmZX0shG7z1Bd4J8vq592MDYinjqTPzgGQJ"; // Tu API key
+    private static final String API_KEY = "UT5SB1FNegdSN6D9LUd9K5FDyX9dih82sEWVRb955b9opUiB2y"; // Tu API key
     private OkHttpClient client = new OkHttpClient();
 
     // Definición del callback para la API
