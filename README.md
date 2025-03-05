@@ -4,6 +4,7 @@ Toda la informacion de la aplicacion se encuentra en el siguiente documento:<br/
 https://docs.google.com/document/d/1lzc8PjHaTsfgDxGshXcekS7u7Q-o6BncgWY1GTJy8vs/edit?usp=sharing<br/>
 Y este es un video con la explicacion de la app, una muestra de funcionamiento y explicacion del codigo:<br/>
 https://www.youtube.com/watch?v=3cnEqp80PaM<br/>
+Para poder ejecutar la aplicacion se debe clonar este repositorio desde android studio, y en caso de que se acaben los creditos de la API se debe cambiar la API key que esta en la clase PlantApiManager.<br/>
 </pre>
 # Historias de usuario  
 <pre>Sprint	 		Historia de usuario
